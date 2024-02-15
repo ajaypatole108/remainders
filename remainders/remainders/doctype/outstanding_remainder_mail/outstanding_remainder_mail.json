@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "REM - .######",
+ "creation": "2023-04-17 16:37:27.934543",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_1",
+  "enable",
+  "column_break_3",
+  "outstanding_remainder_mail_list_section",
+  "email_to",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "outstanding_remainder_mail_list_section",
+   "fieldtype": "Section Break",
+   "label": "Outstanding Remainder"
+  },
+  {
+   "fieldname": "email_to",
+   "fieldtype": "Table",
+   "label": "Email To",
+   "options": "Outstanding Remainder Mail Items"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Outstanding Remainder Mail",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-04-21 11:47:47.314173",
+ "modified_by": "Administrator",
+ "module": "remainders",
+ "name": "Outstanding Remainder Mail",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
